@@ -17,15 +17,33 @@ nav{
     border: 0;
     text-decoration: none;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0 15px; 
 }
-a{
+
+.nav-button:hover a {
+    color: black;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    transform: translateX(-100%,100%);
+}
+.nav-button a{
     text-decoration: none;
-     color:black;
+    color: rgba(0,0,0,0.5);
+    padding-bottom: 5px;
 }
 
-.appname{
+.appname {
     margin-right: auto;
 }
+
+.appname a{
+    color: black;
+}
+
+.appname:hover a{
+    border-bottom: transparent;
+}
+
 
