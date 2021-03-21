@@ -2,6 +2,8 @@ import { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../App.css";
 import Userfront from "@userfront/react";
+import { RiUserHeartLine } from "react-icons/ri";
+import { RiUserSettingsLine } from "react-icons/ri";
 export default class Home extends Component {
   render() {
     return (
@@ -14,11 +16,11 @@ export default class Home extends Component {
             <button class="nav-button" onClick={Userfront.logout}>
               <Link to="/">Logout</Link>
             </button>
-			<button class="nav-button" onClick={Userfront.logout}>
-              <Link to="/">Matches</Link>
+			<button class="nav-button">
+              <Link to="/"><RiUserHeartLine />Matches</Link>
             </button>
             <button class="nav-button">
-              <Link to="/">Settings</Link>
+              <Link to="/"><RiUserSettingsLine />Settings</Link>
             </button>
           </nav>
           <Switch>
