@@ -12,17 +12,17 @@ function App() {
     <Router>
       <div className="App">
         <nav>
-          <button>
+          <button  class="nav-button">
             <Link to="/">Signup</Link>
           </button>
-          <button>
+          <button class="nav-button">
             <Link to="/login">Login</Link>
           </button>
-          <button>
+          <button class="nav-button">
             <Link to="/reset">Reset</Link>
             {/* planning on deleting later */}
           </button>
-          <button>
+          <button class="nav-button">
             <Link to="/dashboard">Dashboard</Link>
           </button>
         </nav>
