@@ -13,7 +13,7 @@ export default class Home extends Component {
 					<Link to="/">APPNAME</Link>
 				  </button>
 				  <button class="nav-button" onClick={Userfront.logout}>
-				  <a>Logout</a></button>
+				  <Link to="/">Logout</Link></button>
 				  <button class="nav-button">
 					<Link to="/">Settings</Link>
 				  </button>
