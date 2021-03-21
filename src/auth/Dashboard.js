@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import Userfront from "@userfront/react";
 import { Route, Redirect } from "react-router-dom";
+import Home from '../components/Home';
 
 export default class Dashboard extends Component {
     render() {
@@ -18,11 +19,10 @@ export default class Dashboard extends Component {
                 <div>
                     <div>
                         <h2>DASHBOARD</h2>
-                        {/* RAGS WORKING ON THIS */}
-                        {/* this will be deleted and rags code will be redirected to app js */}
+                        <Home />
                         <h4>logged in</h4>
                     </div>
-                    <button onClick={Userfront.logout}>Logout</button>
+                    
                 </div>
             );
             
