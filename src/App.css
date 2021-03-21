@@ -5,7 +5,9 @@
 .home-h1 {
     font-size: 100px;
 }
-
+body{
+    overflow: hidden;
+}
 nav {
     display: flex;
     justify-content: flex-end;
@@ -32,11 +34,19 @@ nav {
     position:absolute;
     right:0;
     width:190px;
+    display: none;
+    overflow: hidden;
+}
+
+.settings:hover{
+    transition: all 0.5s ease-in-out;
+   
 }
 
 .settings h4:hover{
     color:black;
     cursor: pointer;
+
 }
 
 
@@ -53,6 +63,10 @@ nav {
 
 .settings h4 a:visited{
     color:#aaa;
+}
+
+.settings h4 a:hover{
+    color:black;
 }
 
 .nav-button a {
