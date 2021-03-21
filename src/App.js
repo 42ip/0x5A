@@ -2,6 +2,9 @@ import './App.css';
 import Userfront from "@userfront/react";
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Login from './auth/Login';
+import Signup from './auth/Signup';
+import Reset from './auth/Reset';
+import Dashboard from './auth/Dashboard';
 
 Userfront.init(process.env.REACT_APP_id);
 
@@ -9,20 +12,38 @@ function App() {
     return (
     <Router>
     <div className="App">
-          <nav>
-              {/* <button>
-                  <Link to="/sign-up">Sign up</Link>
-              </button> */}
+         <nav>
+              <button>
+                  <Link to="/">Signup</Link>
+              </button>
               <button>
                   <Link to="/login">Login</Link>
+                    </button>
+              <button>
+                    <Link to="/reset">Reset</Link>
+                    {/* planning on deleting later */}
+              </button>
+              <button>
+                  <Link to="/dashboard">Dashboard</Link>
               </button>
           </nav>
+
+       
             <Switch>
-              <Route path="/login">
-                  <Login />
-              </Route>
-          </Switch>
-    </div>
+                 <Route path="/login">
+                    <Login />
+                </Route>
+                 <Route path="/reset">
+                    <Reset />
+                    </Route>
+                <Route path="/dashboard">
+                    <Dashboard />
+                </Route>
+                <Route path="/">
+                    <Signup />
+                </Route>
+            </Switch>
+     </div>
     </Router>
   );
 }
