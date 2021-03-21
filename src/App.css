@@ -2,23 +2,23 @@
     text-align: center;
 }
 
-.home-h1{
+.home-h1 {
     font-size: 100px;
 }
 
-nav{
-    display:flex;
+nav {
+    display: flex;
     justify-content: flex-end;
-    padding:15px;
+    padding: 15px;
     background-color: skyblue;
 }
 
-.nav-button{
+.nav-button {
     border: 0;
     text-decoration: none;
     background-color: transparent;
     font-size: 16px;
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
 .nav-button:hover a {
@@ -26,11 +26,12 @@ nav{
     transition: all 0.5s ease;
     border-bottom: 1px solid black;
     padding-bottom: 5px;
-    transform: translateX(-100%,100%);
+    transform: translateX(-100%, 100%);
 }
-.nav-button a{
+
+.nav-button a {
     text-decoration: none;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
     padding-bottom: 5px;
 }
 
@@ -38,12 +39,10 @@ nav{
     margin-right: auto;
 }
 
-.appname a{
+.appname a {
     color: black;
 }
 
-.appname:hover a{
+.appname:hover a {
     border-bottom: transparent;
 }
-
-
