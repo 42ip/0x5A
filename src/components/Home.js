@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import '../App.css';
-
+import Userfront from "@userfront/react";
 export default class Home extends Component {
   render()
     {
@@ -12,9 +12,8 @@ export default class Home extends Component {
 				  <button class="nav-button appname">
 					<Link to="/">APPNAME</Link>
 				  </button>
-				  <button class="nav-button">
-					<Link to="/">Sign Out</Link>
-				  </button>
+				  <button class="nav-button" onClick={Userfront.logout}>
+				  <a>Logout</a></button>
 				  <button class="nav-button">
 					<Link to="/">Settings</Link>
 				  </button>

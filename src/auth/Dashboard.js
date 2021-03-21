@@ -22,7 +22,7 @@ export default class Dashboard extends Component {
                         <Home />
                         <h4>logged in</h4>
                     </div>
-                    <button onClick={Userfront.logout}>Logout</button>
+                    
                 </div>
             );
             
