@@ -27,7 +27,7 @@ export default class Home extends Component {
           <nav>
             <div class="adg">
               <button class="nav-button appname">
-                <Link to="/readme">APPNAME</Link>
+                <Link to="/readme.html">APPNAME</Link>
               </button>
               <button class="nav-button" onClick={Userfront.logout}>
                 <Link>Logout</Link>
