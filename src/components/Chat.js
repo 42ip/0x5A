@@ -1,11 +1,11 @@
 import {Component} from 'react'
 
-export default class Profile extends Component {
+export default class Chat extends Component {
     render()
     {
         return (
             <div>
-            <h2>hey from profile page</h2>
+            <h2>Chat section</h2>
             </div>
         );
     }

@@ -4,11 +4,12 @@ import Reset from "../auth/Reset";
 import "../App.css";
 import Profile from "./Profile";
 import Matches from "./Matches";
+import Chat from "./Chat";
 import Userfront from "@userfront/react";
 import { RiUserHeartLine } from "react-icons/ri";
 import { RiUserSettingsLine } from "react-icons/ri";
 export default class Home extends Component {
-  render() {
+    render() {
     return (
       <Router>
         <div className="App">
@@ -34,7 +35,8 @@ export default class Home extends Component {
           </nav>
           <div class="settings">
             <h4 id="1"> <Link to="/profile" style={{ textDecoration: "none" }}>Profile</Link></h4>
-            <h4 id="2">Chat</h4>
+                    <h4 id="2">
+                        <Link to="/Chat" style={{ textDecoration: "none" }}>Chat</Link></h4>
             <h4 id="3">
               <Link to="/reset" style={{ textDecoration: "none" }}>
                 Change Password
@@ -51,7 +53,10 @@ export default class Home extends Component {
             </Route>
             <Route path="/matches">
             <Matches />
-            </Route>       
+            </Route>
+             <Route>
+             <Chat />
+            </Route>        
           </Switch>
         </div>
       </Router>
