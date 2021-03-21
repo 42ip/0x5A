@@ -1,5 +1,4 @@
-.match-page {
-    display: flex;
-    justify-content: space-evenly;
+.profile-page {
+    display: block;
     padding-top: 20px;
 }

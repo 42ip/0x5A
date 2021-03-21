@@ -1,10 +1,17 @@
 import {Component} from 'react'
-
+import Avatar from 'react-avatar';
+import { AiFillHeart } from 'react-icons/ai'
+import './Matches.css'
 export default class Matches extends Component {
     render()
     {
         return (
-            <h2>hey from matches page</h2>
+            <div className="match-page">
+                <h2>Your Matches <AiFillHeart /></h2>
+                <Avatar name="Jennifer" size="150" textSizeRatio={1.75} />
+                <Avatar name="Samantha" size="150" textSizeRatio={1.75} />
+                <Avatar name="Angelina" size="150" textSizeRatio={1.75} />
+            </div>
         );
     }
 }
