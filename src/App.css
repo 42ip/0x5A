@@ -1,3 +1,31 @@
 .App {
     text-align: center;
 }
+
+.home-h1{
+    font-size: 100px;
+}
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+    padding:15px;
+    background-color: skyblue;
+}
+
+.nav-button{
+    border: 0;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 20px;
+    margin: 0 15px; 
+}
+a{
+    text-decoration: none;
+     color:black;
+}
+
+.appname{
+    margin-right: auto;
+}
+
