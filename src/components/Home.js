@@ -21,6 +21,7 @@ export default class Home extends Component {
       <Router>
         <div className="App">
           <nav>
+            <div class="adg">
             <button class="nav-button appname">
               <Link to="/">APPNAME</Link>
             </button>
@@ -33,6 +34,7 @@ export default class Home extends Component {
             <button class="nav-button" onClick={settingfun}>
               <Link >Settings</Link>
             </button>
+            </div>
           </nav>
 		  <div class="settings">
 			  <h4 id="1">Profile</h4>

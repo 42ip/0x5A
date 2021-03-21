@@ -88,3 +88,33 @@ nav {
 .appname:hover a {
     border-bottom: transparent;
 }
+
+@media (max-width: 600px) {
+    nav{
+        display:block;
+        background-color:skyblue;
+        height:30px;
+        
+        width:100vw;
+    }
+
+    .adg{
+        position: absolute;
+        right: 0;
+        top:61px;
+        width:200px;
+        z-index: 10000;
+    }
+    .nav-button{
+    display: block;
+    width:200px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    padding:15px;
+    margin: 0;
+    z-index: 100;
+    }
+    nav{
+        margin-bottom:45px;
+    }
+}
