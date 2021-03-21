@@ -39,7 +39,7 @@ export default class Home extends Component {
                   Matches
                 </Link>
               </button>
-              <button class="nav-button" onClick={settingfun}>
+              <button class="nav-button" onClick={settingfun2}>
                 <Link to="/">
                   <RiUserSettingsLine />
                   Settings
