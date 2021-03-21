@@ -13,20 +13,46 @@ nav {
     background-color: skyblue;
 }
 
-.nav-button {
+.nav-button{
     border: 0;
     text-decoration: none;
     background-color: transparent;
     font-size: 16px;
-    margin: 0 15px;
+    margin: 0 40px;
 }
 
-.nav-button:hover a {
+.nav-button:hover a{
     color: black;
     transition: all 0.5s ease;
     border-bottom: 1px solid black;
     padding-bottom: 5px;
-    transform: translateX(-100%, 100%);
+}
+
+.settings{
+    position:absolute;
+    right:0;
+    width:190px;
+}
+
+.settings h4:hover{
+    color:black;
+    cursor: pointer;
+}
+
+
+
+
+.settings h4{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    padding:15px;
+    margin: 0;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.settings h4 a:visited{
+    color:#aaa;
 }
 
 .nav-button a {
@@ -34,6 +60,8 @@ nav {
     color: rgba(0, 0, 0, 0.5);
     padding-bottom: 5px;
 }
+
+
 
 .appname {
     margin-right: auto;
