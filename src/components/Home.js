@@ -14,6 +14,9 @@ export default class Home extends Component {
             <button class="nav-button" onClick={Userfront.logout}>
               <Link to="/">Logout</Link>
             </button>
+			<button class="nav-button" onClick={Userfront.logout}>
+              <Link to="/">Matches</Link>
+            </button>
             <button class="nav-button">
               <Link to="/">Settings</Link>
             </button>
