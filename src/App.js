@@ -13,6 +13,7 @@ function App() {
       <Router>
         <div className="App">
           <nav>
+            <div class="adg">
             <button class="nav-button">
               <Link to="/">Signup</Link>
             </button>
@@ -26,6 +27,7 @@ function App() {
             <button class="nav-button">
               <Link to="/dashboard">Dashboard</Link>
             </button>
+            </div>
           </nav>
 
           <Switch>

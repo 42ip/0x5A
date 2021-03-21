@@ -5,7 +5,9 @@
 .home-h1 {
     font-size: 100px;
 }
-
+body{
+    overflow: hidden;
+}
 nav {
     display: flex;
     justify-content: flex-end;
@@ -32,11 +34,19 @@ nav {
     position:absolute;
     right:0;
     width:190px;
+    display: none;
+    overflow: hidden;
+}
+
+.settings:hover{
+    transition: all 0.5s ease-in-out;
+   
 }
 
 .settings h4:hover{
     color:black;
     cursor: pointer;
+
 }
 
 
@@ -53,6 +63,10 @@ nav {
 
 .settings h4 a:visited{
     color:#aaa;
+}
+
+.settings h4 a:hover{
+    color:black;
 }
 
 .nav-button a {
@@ -73,4 +87,34 @@ nav {
 
 .appname:hover a {
     border-bottom: transparent;
+}
+
+@media (max-width: 600px) {
+    nav{
+        display:block;
+        background-color:skyblue;
+        height:30px;
+        
+        width:100vw;
+    }
+
+    .adg{
+        position: absolute;
+        right: 0;
+        top:61px;
+        width:200px;
+        z-index: 10000;
+    }
+    .nav-button{
+    display: block;
+    width:200px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    padding:15px;
+    margin: 0;
+    z-index: 100;
+    }
+    nav{
+        margin-bottom:45px;
+    }
 }
