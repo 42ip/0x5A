@@ -1,27 +1,47 @@
-import { Switch, BrowserRouter as Router, Link , Route} from "react-router-dom";
-import './App.css';
-import Home from './components/Home.js';
+import "./App.css";
+import Userfront from "@userfront/react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Login from "./auth/Login";
+import Signup from "./auth/Signup";
+import Reset from "./auth/Reset";
+import Dashboard from "./auth/Dashboard";
+
+Userfront.init(process.env.REACT_APP_id);
 function App() {
   return (
     <Router>
-    <div className="App">
-    <nav>
-              <button class="nav-button appname">
-                  <Link to="/">APPNAME</Link>
-              </button>
-              <button class="nav-button">
-                <Link to="/">Sign Out</Link>
-              </button> 
-              <button class="nav-button">
-                <Link to="/">Settings</Link>
-              </button>
-     </nav>
-              <Switch>
-              <Route path="/">
-                    <Home />
-                </Route>
-              </Switch>
-    </div>
+      <div className="App">
+        <nav>
+          <button>
+            <Link to="/">Signup</Link>
+          </button>
+          <button>
+            <Link to="/login">Login</Link>
+          </button>
+          <button>
+            <Link to="/reset">Reset</Link>
+            {/* planning on deleting later */}
+          </button>
+          <button>
+            <Link to="/dashboard">Dashboard</Link>
+          </button>
+        </nav>
+
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/reset">
+            <Reset />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+          <Route path="/">
+            <Signup />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
