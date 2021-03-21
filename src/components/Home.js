@@ -20,7 +20,6 @@ export default class Home extends Component {
 				</nav>
 				<Switch>
 				  <Route path="/dashboard">
-					{/* ? */}
 				  </Route>
 				</Switch>
 			  </div>
