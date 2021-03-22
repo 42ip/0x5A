@@ -32,18 +32,15 @@ export default class Home extends Component {
               <button class="nav-button" onClick={Userfront.logout}>
                 <Link>Logout</Link>
               </button>
-              <button class="nav-button" onClick={settingfun}>
-                
+              <button class="nav-button" onClick={settingfun2}>
                 <Link to="/matches">
                   <RiUserHeartLine />
                   Matches
                 </Link>
               </button>
-              <button class="nav-button" onClick={settingfun2}>
-                <Link to="/">
+              <button class="nav-button" onClick={settingfun} style={{cursor: "pointer", outline: "none"}}>
                   <RiUserSettingsLine />
                   Settings
-                </Link>
               </button>
             </div>
           </nav>
