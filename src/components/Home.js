@@ -26,7 +26,7 @@ export default class Home extends Component {
         <div className="App">
           <nav>
             <div class="adg">
-              <button class="nav-button appname">
+              <button class="nav-button appname" onClick={settingfun2}>
                 <Link to="/readme.html">APPNAME</Link>
               </button>
               <button class="nav-button" onClick={Userfront.logout}>
@@ -46,13 +46,12 @@ export default class Home extends Component {
           </nav>
           <div class="settings">
             <h4 id="1">
-              {" "}
               <Link to="/profile" style={{ textDecoration: "none" }}>
                 Profile
               </Link>
             </h4>
             <h4 id="2">
-              <Link to="/Chat" style={{ textDecoration: "none" }}>
+              <Link to="/chat" style={{ textDecoration: "none" }}>
                 Chat
               </Link>
             </h4>
@@ -82,7 +81,7 @@ export default class Home extends Component {
             <Route path="/matches">
               <Matches />
             </Route>
-            <Route>
+            <Route path="/chat">
               <Chat />
             </Route>
           </Switch>
