@@ -2,12 +2,18 @@
     text-align: center;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .home-h1 {
     font-size: 100px;
 }
-body{
+
+body {
     overflow: hidden;
 }
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -15,7 +21,7 @@ nav {
     background-color: skyblue;
 }
 
-.nav-button{
+.nav-button {
     border: 0;
     text-decoration: none;
     background-color: transparent;
@@ -23,50 +29,45 @@ nav {
     margin: 0 40px;
 }
 
-.nav-button:hover a{
+.nav-button:hover a {
     color: black;
     transition: all 0.5s ease;
     border-bottom: 1px solid black;
     padding-bottom: 5px;
 }
 
-.settings{
-    position:absolute;
-    right:0;
-    width:190px;
+.settings {
+    position: absolute;
+    right: 0;
+    width: 190px;
     display: none;
     overflow: hidden;
 }
 
-.settings:hover{
+.settings:hover {
     transition: all 0.5s ease-in-out;
-   
 }
 
-.settings h4:hover{
-    color:black;
+.settings h4:hover {
+    color: black;
     cursor: pointer;
-
 }
 
-
-
-
-.settings h4{
+.settings h4 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     border-left: 1px solid rgba(0, 0, 0, 0.5);
-    padding:15px;
+    padding: 15px;
     margin: 0;
     color: #aaa;
     text-decoration: none;
 }
 
-.settings h4 a:visited{
-    color:#aaa;
+.settings h4 a:visited {
+    color: #aaa;
 }
 
-.settings h4 a:hover{
-    color:black;
+.settings h4 a:hover {
+    color: black;
 }
 
 .nav-button a {
@@ -74,8 +75,6 @@ nav {
     color: rgba(0, 0, 0, 0.5);
     padding-bottom: 5px;
 }
-
-
 
 .appname {
     margin-right: auto;
@@ -90,31 +89,29 @@ nav {
 }
 
 @media (max-width: 600px) {
-    nav{
-        display:block;
-        background-color:skyblue;
-        height:30px;
-        
-        width:100vw;
+    nav {
+        display: block;
+        background-color: skyblue;
+        height: 30px;
+        width: 100vw;
     }
-
-    .adg{
+    .adg {
         position: absolute;
         right: 0;
-        top:61px;
-        width:200px;
+        top: 61px;
+        width: 200px;
         z-index: 10000;
     }
-    .nav-button{
-    display: block;
-    width:200px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(0, 0, 0, 0.5);
-    padding:15px;
-    margin: 0;
-    z-index: 100;
+    .nav-button {
+        display: block;
+        width: 200px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-left: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        margin: 0;
+        z-index: 100;
     }
-    nav{
-        margin-bottom:45px;
+    nav {
+        margin-bottom: 45px;
     }
 }

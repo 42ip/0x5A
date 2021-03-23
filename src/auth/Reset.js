@@ -9,9 +9,6 @@ export default class Reset extends Component {
   render() {
     return (
       <div>
-        <div>
-          <h2>reset</h2>
-        </div>
         <PasswordResetForm />
       </div>
     );
