@@ -25,25 +25,25 @@ export default class Home extends Component {
       <Router>
         <div className="App">
           <nav>
-            <div class="adg">
-              <button class="nav-button appname" >
+            <div className="adg">
+              <button className="nav-button appname" >
                 <Link to="/dashboard">APPNAME</Link>
               </button>
-              <button class="nav-button" onClick={Userfront.logout}>
+              <button className="nav-button" onClick={Userfront.logout}>
                 <Link>Logout</Link>
               </button>
-              <button class="nav-button" onClick={settingfun2}>
+              <button className="nav-button" onClick={settingfun2}>
                 <Link to="/matches">
                   <RiUserHeartLine />
                   Matches
                 </Link>
               </button>
-              <button class="nav-button" onClick={settingfun}>
+              <button className="nav-button" onClick={settingfun}>
                 <Link to="" onClick={ (event) => event.preventDefault() }> <RiUserSettingsLine /> Settings</Link>
               </button>
             </div>
           </nav>
-          <div class="settings">
+          <div className="settings">
             <h4 id="1">
               <Link to="/profile" style={{ textDecoration: "none" } } onClick={settingfun2}>
                 Profile

@@ -36,9 +36,15 @@ nav {
     align-items: center;
 }
 
+input[type="button"]:focus {
+    outline: none !important;
+    border: none !important;
+}
+
 .nav-button {
     background: transparent;
-    border: none;
+    outline: none !important;
+    border: none !important;
 }
 
 .nav-button a {
@@ -91,16 +97,16 @@ nav {
     text-decoration: none;
 }
 
-.settings h4:first-child{
-    border-top:1px solid #fff ;
+.settings h4:first-child {
+    border-top: 1px solid #fff;
 }
 
-.settings h4 a{
-    color:white;
+.settings h4 a {
+    color: white;
 }
 
 .settings h4 a:visited {
-    color:#fff;
+    color: #fff;
 }
 
 .settings h4 a:hover {
