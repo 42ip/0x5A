@@ -32,7 +32,7 @@ export default class Home extends Component {
               <button class="nav-button" onClick={Userfront.logout}>
                 <Link>Logout</Link>
               </button>
-              <button class="nav-button" >
+              <button class="nav-button" onClick={settingfun2}>
                 <Link to="/matches">
                   <RiUserHeartLine />
                   Matches
