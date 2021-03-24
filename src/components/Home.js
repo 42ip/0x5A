@@ -38,9 +38,8 @@ export default class Home extends Component {
                   Matches
                 </Link>
               </button>
-              <button class="nav-button" onClick={settingfun} style={{cursor: "pointer", outline: "none"}}>
-                  <RiUserSettingsLine />
-                  Settings
+              <button class="nav-button" onClick={settingfun}>
+                <Link to="" onClick={ (event) => event.preventDefault() }> <RiUserSettingsLine /> Settings</Link>
               </button>
             </div>
           </nav>
@@ -55,15 +54,6 @@ export default class Home extends Component {
                 Chat
               </Link>
             </h4>
-            <h4 id="3">
-              <Link to="/reset" style={{ textDecoration: "none" }}>
-                Change Password
-              </Link>
-            </h4>
-          </div>
-          <div class="settings">
-            <h4 id="1">Profile</h4>
-            <h4 id="2">Chat</h4>
             <h4 id="3">
               <Link to="/reset" style={{ textDecoration: "none" }}>
                 Change Password
