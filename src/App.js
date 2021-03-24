@@ -27,7 +27,7 @@ function App() {
               {/* planning on deleting later */}
             </button>
             <button className="nav-button">
-              <Link to="/dashboard">Dashboard</Link>
+              <Link to="/dashboard" class="important">Dashboard</Link>
             </button>
             </div>
           </nav>
