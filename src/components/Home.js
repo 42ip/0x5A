@@ -26,13 +26,13 @@ export default class Home extends Component {
         <div className="App">
           <nav>
             <div class="adg">
-              <button class="nav-button appname" onClick={settingfun2}>
+              <button class="nav-button appname" >
                 <Link to="/dashboard">APPNAME</Link>
               </button>
               <button class="nav-button" onClick={Userfront.logout}>
                 <Link>Logout</Link>
               </button>
-              <button class="nav-button" onClick={settingfun2}>
+              <button class="nav-button" >
                 <Link to="/matches">
                   <RiUserHeartLine />
                   Matches
@@ -45,17 +45,17 @@ export default class Home extends Component {
           </nav>
           <div class="settings">
             <h4 id="1">
-              <Link to="/profile" style={{ textDecoration: "none" }}>
+              <Link to="/profile" style={{ textDecoration: "none" } } onClick={settingfun2}>
                 Profile
               </Link>
             </h4>
             <h4 id="2">
-              <Link to="/chat" style={{ textDecoration: "none" }}>
+              <Link to="/chat" style={{ textDecoration: "none" }} onClick={settingfun2}>
                 Chat
               </Link>
             </h4>
             <h4 id="3">
-              <Link to="/reset" style={{ textDecoration: "none" }}>
+              <Link to="/reset" style={{ textDecoration: "none" }} onClick={settingfun2}>
                 Change Password
               </Link>
             </h4>
