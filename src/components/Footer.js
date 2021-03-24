@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./Footer.css";
+import "./css/Footer.css";
 const footer = () => (
     <div className="footer">Copyright &#169; 2020 APPNAME.</div>
 );

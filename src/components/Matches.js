@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import Avatar from 'react-avatar';
 import { AiFillHeart } from 'react-icons/ai'
-import './Matches.css'
+import './css/Matches.css'
 export default class Matches extends Component {
     render()
     {

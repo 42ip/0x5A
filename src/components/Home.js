@@ -27,7 +27,7 @@ export default class Home extends Component {
           <nav>
             <div class="adg">
               <button class="nav-button appname" onClick={settingfun2}>
-                <Link to="/readme.html">APPNAME</Link>
+                <Link to="/dashboard">APPNAME</Link>
               </button>
               <button class="nav-button" onClick={Userfront.logout}>
                 <Link>Logout</Link>

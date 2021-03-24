@@ -1,6 +1,6 @@
 import {Component} from 'react'
 import Avatar from 'react-avatar';
-import './Profile.css'
+import './css/Profile.css'
 
 export default class Profile extends Component {
     render()
