@@ -72,6 +72,7 @@ nav {
     display: none;
     overflow: hidden;
     background-color: skyblue;
+    z-index: 200;
 }
 
 .settings:hover {
