@@ -12,7 +12,6 @@ export default class Dashboard extends Component {
           <Redirect to={{ pathname: "/login", state: { from: location } }} />
         );
       }
-
       return (
         <div>
           <div>

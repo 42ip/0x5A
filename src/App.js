@@ -6,7 +6,7 @@ import Signup from "./auth/Signup";
 import Reset from "./auth/Reset";
 import Dashboard from "./auth/Dashboard";
 import Home from "./components/Home";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
 Userfront.init(process.env.REACT_APP_id);
 function App() {
@@ -24,7 +24,6 @@ function App() {
             </button>
             <button className="nav-button">
               <Link to="/reset">Reset</Link>
-              {/* planning on deleting later */}
             </button>
             <button className="nav-button">
               <Link to="/dashboard" class="important">Dashboard</Link>

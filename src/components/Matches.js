@@ -8,9 +8,9 @@ export default class Matches extends Component {
         return (
             <div className="match-page">
                 <h2>Your Matches <AiFillHeart /></h2>
-                <Avatar name="Jennifer" size="150" textSizeRatio={1.75} />
-                <Avatar name="Samantha" size="150" textSizeRatio={1.75} />
-                <Avatar name="Angelina" size="150" textSizeRatio={1.75} />
+                <Avatar name="Jennifer" size="100" textSizeRatio={1.75} />
+                <Avatar name="Samantha" size="100" textSizeRatio={1.75}/>
+                <Avatar name="Angelina" size="100" textSizeRatio={1.75}/>
             </div>
         );
     }
